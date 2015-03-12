@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://github.com/ohler55/ox -->
+<html lang="en" class=""><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    
+    
+    <title>ohler55/ox</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://github.com/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://github.com/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://github.com/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://github.com/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site"><meta content="summary" name="twitter:card"><meta content="ohler55/ox" name="twitter:title"><meta content="ox - Ruby Optimized XML Parser" name="twitter:description"><meta content="https://avatars3.githubusercontent.com/u/118856?v=3&amp;s=400" name="twitter:image:src">
+      <meta content="GitHub" property="og:site_name"><meta content="object" property="og:type"><meta content="https://avatars3.githubusercontent.com/u/118856?v=3&amp;s=400" property="og:image"><meta content="ohler55/ox" property="og:title"><meta content="https://github.com/ohler55/ox" property="og:url"><meta content="ox - Ruby Optimized XML Parser" property="og:description">
+      <meta name="browser-stats-url" content="/_stats">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="conduit-xhr" href="https://ghconduit.com:25035/">
+    <link rel="xhr-socket" href="https://github.com/_sockets">
+    <meta name="pjax-timeout" content="1000">
+    <link rel="sudo-modal" href="https://github.com/sessions/sudo_modal">
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient="">
+      <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host"><meta content="collector-cdn.github.com" name="octolytics-script-host"><meta content="github" name="octolytics-app-id"><meta content="8717BED3:376A:59054CD:55010763" name="octolytics-dimension-request_id"><meta content="16409" name="octolytics-actor-id"><meta content="epitron" name="octolytics-actor-login"><meta content="0a362541c2b52ccc8053d2e12bdd7459c30463edd06990af86a2fb9c3b489c47" name="octolytics-actor-hash">
+    
+    <meta content="Rails, view, files#disambiguate" name="analytics-event">
+
+    
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+
+    <meta content="authenticity_token" name="csrf-param">
+<meta content="FerCYnE2lFsHBgplUjDJ44gRQX7cXV7kkceyoXeWJ/2xIGrvJPLMQpOu9wyXYACrH89GIC+a/43HZk3/KvK8bw==" name="csrf-token">
+
+    <link href="https://assets-cdn.github.com/assets/github-845daf0c8f04a9119cb376ccd6de834afd5fe701bfda61662e4bc5109ab4cf63.css" media="all" rel="stylesheet">
+    <link href="https://assets-cdn.github.com/assets/github2-ae8485828d2601a1471551947bc8ad813317660b06a2e61b3d487ac31dc00de3.css" media="all" rel="stylesheet">
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="8ae36b50ef20a1a8f27ad0e533aa60a3">
+
+      
+  <meta name="description" content="ox - Ruby Optimized XML Parser">
+  <meta name="go-import" content="github.com/ohler55/ox git https://github.com/ohler55/ox.git">
+
+  <meta content="118856" name="octolytics-dimension-user_id"><meta content="ohler55" name="octolytics-dimension-user_login"><meta content="1345214" name="octolytics-dimension-repository_id"><meta content="ohler55/ox" name="octolytics-dimension-repository_nwo"><meta content="true" name="octolytics-dimension-repository_public"><meta content="false" name="octolytics-dimension-repository_is_fork"><meta content="1345214" name="octolytics-dimension-repository_network_root_id"><meta content="ohler55/ox" name="octolytics-dimension-repository_network_root_nwo">
+  <link href="https://github.com/ohler55/ox/commits/master.atom" rel="alternate" title="Recent Commits to ox:master" type="application/atom+xml">
+
+  <style>.container > .infoBoxList > .shareInfoBox
+{display:none !important;}</style><script type="text/javascript" async="" src="https://collector-cdn.github.com/assets/api.js"></script></head>
+
+
+  <body class="logged_in  env-production linux vis-public">
+    <a href="https://github.com/ohler55/ox#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+        <div class="header header-logged-in true" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <span class="mega-octicon octicon-mark-github"></span>
+</a>
+
+
+      <div class="site-search repo-scope js-site-search" role="search">
+          <form accept-charset="UTF-8" action="https://github.com/ohler55/ox/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/ohler55/ox/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+  <input type="text" class="js-site-search-field is-clearable" data-hotkey="s" name="q" placeholder="Search" data-global-scope-placeholder="Search GitHub" data-repo-scope-placeholder="Search" tabindex="1" autocapitalize="off">
+  <div class="scope-badge">This repository</div>
+</form>
+      </div>
+      <ul class="header-nav left" role="navigation">
+        <li class="header-nav-item explore">
+          <a class="header-nav-link" href="https://github.com/explore" data-ga-click="Header, go to explore, text:explore">Explore</a>
+        </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://gist.github.com/" data-ga-click="Header, go to gist, text:gist">Gist</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://github.com/blog" data-ga-click="Header, go to blog, text:blog">Blog</a>
+          </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="https://help.github.com/" data-ga-click="Header, go to help, text:help">Help</a>
+        </li>
+      </ul>
+
+    
+<ul class="header-nav user-nav right" id="user-links">
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link name" href="https://github.com/epitron" data-ga-click="Header, go to profile, text:username">
+      <img alt="Chris Gahan" class="avatar" data-user="16409" height="20" src="./ox_files/16409" width="20">
+      <span class="css-truncate">
+        <span class="css-truncate-target">epitron</span>
+      </span>
+    </a>
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link js-menu-target tooltipped tooltipped-s" href="https://github.com/ohler55/ox#" aria-label="Create new..." data-ga-click="Header, create new, icon:add">
+      <span class="octicon octicon-plus"></span>
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      
+<ul class="dropdown-menu">
+  <li>
+    <a href="https://github.com/new" data-ga-click="Header, create new repository, icon:repo"><span class="octicon octicon-repo"></span> New repository</a>
+  </li>
+  <li>
+    <a href="https://github.com/organizations/new" data-ga-click="Header, create new organization, icon:organization"><span class="octicon octicon-organization"></span> New organization</a>
+  </li>
+
+
+    <li class="dropdown-divider"></li>
+    <li class="dropdown-header">
+      <span title="ohler55/ox">This repository</span>
+    </li>
+      <li>
+        <a href="https://github.com/ohler55/ox/issues/new" data-ga-click="Header, create new issue, icon:issue"><span class="octicon octicon-issue-opened"></span> New issue</a>
+      </li>
+</ul>
+
+    </div>
+  </li>
+
+  <li class="header-nav-item">
+        <a href="https://github.com/notifications" aria-label="You have unread notifications" class="header-nav-link notification-indicator tooltipped tooltipped-s" data-ga-click="Header, go to notifications, icon:unread" data-hotkey="g n">
+        <span class="mail-status unread"></span>
+        <span class="octicon octicon-inbox"></span>
+</a>
+  </li>
+
+  <li class="header-nav-item">
+    <a class="header-nav-link tooltipped tooltipped-s" href="https://github.com/settings/profile" id="account_settings" aria-label="Settings" data-ga-click="Header, go to settings, icon:settings">
+      <span class="octicon octicon-gear"></span>
+    </a>
+  </li>
+
+  <li class="header-nav-item">
+    <form accept-charset="UTF-8" action="https://github.com/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="opg9gDV0rcu3xv8to6XQ/xYpu57E1K9vVnR4+A72kTBtHuqY98GKoxCtZuLpmdFBUAoCrrP6ERk39D0JkyqbDw=="></div>
+      <button class="header-nav-link sign-out-button tooltipped tooltipped-s" aria-label="Sign out" data-ga-click="Header, sign out, icon:logout">
+        <span class="octicon octicon-sign-out"></span>
+      </button>
+</form>  </li>
+
+</ul>
+
+
+    
+  </div>
+</div>
+
+        
+
+        
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope="" itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+<ul class="pagehead-actions">
+
+  <li>
+      <form accept-charset="UTF-8" action="https://github.com/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="XeU+XqL3lxqaPmiuERf+GIHmVJ/5DPTK7TgtePjqnG9opmwHNJTM1qlJKEHLvHZnP+MCtIYrkBwkpbIOB/mGQw=="></div>    <input id="repository_id" name="repository_id" type="hidden" value="1345214">
+
+      <div class="select-menu js-menu-container js-select-menu">
+        <a class="social-count js-social-count" href="https://github.com/ohler55/ox/watchers">
+          16
+        </a>
+        <a href="https://github.com/ohler55/ox/subscription" class="minibutton select-menu-button with-count js-menu-target" role="button" tabindex="0" aria-haspopup="true" data-ga-click="Repository, click Watch settings, action:files#disambiguate">
+          <span class="js-select-button">
+            <span class="octicon octicon-eye"></span>
+            Watch
+          </span>
+        </a>
+
+        <div class="select-menu-modal-holder">
+          <div class="select-menu-modal subscription-menu-modal js-menu-content" aria-hidden="true">
+            <div class="select-menu-header">
+              <span class="select-menu-title">Notifications</span>
+              <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+            </div>
+
+            <div class="select-menu-list js-navigation-container" role="menu">
+
+              <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                <span class="select-menu-item-icon octicon octicon-check"></span>
+                <div class="select-menu-item-text">
+                  <input checked="checked" id="do_included" name="do" type="radio" value="included">
+                  <span class="select-menu-item-heading">Not watching</span>
+                  <span class="description">Be notified when participating or @mentioned.</span>
+                  <span class="js-select-button-text hidden-select-button-text">
+                    <span class="octicon octicon-eye"></span>
+                    Watch
+                  </span>
+                </div>
+              </div>
+
+              <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                <span class="select-menu-item-icon octicon octicon octicon-check"></span>
+                <div class="select-menu-item-text">
+                  <input id="do_subscribed" name="do" type="radio" value="subscribed">
+                  <span class="select-menu-item-heading">Watching</span>
+                  <span class="description">Be notified of all conversations.</span>
+                  <span class="js-select-button-text hidden-select-button-text">
+                    <span class="octicon octicon-eye"></span>
+                    Unwatch
+                  </span>
+                </div>
+              </div>
+
+              <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                <span class="select-menu-item-icon octicon octicon-check"></span>
+                <div class="select-menu-item-text">
+                  <input id="do_ignore" name="do" type="radio" value="ignore">
+                  <span class="select-menu-item-heading">Ignoring</span>
+                  <span class="description">Never be notified.</span>
+                  <span class="js-select-button-text hidden-select-button-text">
+                    <span class="octicon octicon-mute"></span>
+                    Stop ignoring
+                  </span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+</form>
+  </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+
+    <form accept-charset="UTF-8" action="https://github.com/ohler55/ox/unstar" class="js-toggler-form starred js-unstar-button" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="3btdb3cVjzu1OARBu1doBKBoqftJW+ZpUI72U8Hfa4dDtmhAreEi/Q4H11gt3TpJ51HiBfW5r3gQcY6Fe8CYTg=="></div>
+      <button class="minibutton with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar ohler55/ox" data-ga-click="Repository, click unstar button, action:files#disambiguate; text:Unstar">
+        <span class="octicon octicon-star"></span>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="https://github.com/ohler55/ox/stargazers">
+          376
+        </a>
+</form>
+    <form accept-charset="UTF-8" action="https://github.com/ohler55/ox/star" class="js-toggler-form unstarred js-star-button" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="nAXlt8QfLX1GSmBz3X9gDdRGyMSc4R6TxkV27b30Zeu9BKw/+8KYXwR9pl5fgAxGMCfig9uh6rFG06FH1vHgJw=="></div>
+      <button class="minibutton with-count js-toggler-target" aria-label="Star this repository" title="Star ohler55/ox" data-ga-click="Repository, click star button, action:files#disambiguate; text:Star">
+        <span class="octicon octicon-star"></span>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="https://github.com/ohler55/ox/stargazers">
+          376
+        </a>
+</form>  </div>
+
+  </li>
+
+        <li>
+          <a href="https://github.com/ohler55/ox/fork" class="minibutton with-count js-toggler-target tooltipped-n" title="Fork your own copy of ohler55/ox to your account" aria-label="Fork your own copy of ohler55/ox to your account" rel="facebox nofollow" data-ga-click="Repository, show fork modal, action:files#disambiguate; text:Fork">
+            <span class="octicon octicon-repo-forked"></span>
+            Fork
+          </a>
+          <a href="https://github.com/ohler55/ox/network" class="social-count">30</a>
+        </li>
+
+</ul>
+
+        <h1 itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author"><a href="https://github.com/ohler55" class="url fn" itemprop="url" rel="author"><span itemprop="title">ohler55</span></a></span><!--
+       --><span class="path-divider">/</span><!--
+       --><strong><a href="./ox_files/ox.html" class="js-current-repository" data-pjax="#js-repo-pjax-container">ox</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline with-full-navigation">
+        <div class="repository-sidebar clearfix">
+            
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders" role="navigation" data-pjax="#js-repo-pjax-container" data-issue-count-url="/ohler55/ox/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="./ox_files/ox.html" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /ohler55/ox">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="https://github.com/ohler55/ox/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /ohler55/ox/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="counter">2</span>
+
+          <img alt="" class="mini-loader" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull Requests">
+      <a href="https://github.com/ohler55/ox/pulls" aria-label="Pull Requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /ohler55/ox/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
+          <span class="counter">1</span>
+
+          <img alt="" class="mini-loader" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+</a>    </li>
+
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="https://github.com/ohler55/ox/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /ohler55/ox/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="https://github.com/ohler55/ox/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /ohler55/ox/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="https://github.com/ohler55/ox/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /ohler55/ox/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+              <div class="only-with-full-nav">
+                  
+<div class="clone-url " data-protocol-type="http" data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target" value="https://github.com/ohler55/ox.git" readonly="readonly">
+    <span class="input-group-button">
+      
+    </span>
+  </div>
+</div>
+
+  
+<div class="clone-url open" data-protocol-type="ssh" data-url="/users/set_protocol?protocol_selector=ssh&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">SSH</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target" value="git@github.com:ohler55/ox.git" readonly="readonly">
+    <span class="input-group-button">
+      
+    </span>
+  </div>
+</div>
+
+  
+<div class="clone-url " data-protocol-type="subversion" data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target" value="https://github.com/ohler55/ox" readonly="readonly">
+    <span class="input-group-button">
+      
+    </span>
+  </div>
+</div>
+
+
+
+<p class="clone-options">You can clone with
+  <a href="https://github.com/ohler55/ox#" class="js-clone-selector" data-protocol="http">HTTPS</a>, <a href="https://github.com/ohler55/ox#" class="js-clone-selector" data-protocol="ssh">SSH</a>, or <a href="https://github.com/ohler55/ox#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <span class="octicon octicon-question"></span>
+  </a>
+</p>
+
+
+
+                <a href="https://github.com/ohler55/ox/archive/master.zip" class="minibutton sidebar-button" aria-label="Download the contents of ohler55/ox as a zip file" title="Download the contents of ohler55/ox as a zip file" rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+              </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container="">
+          
+<span id="js-show-full-navigation"></span>
+
+<div class="repository-meta js-details-container ">
+    <div class="repository-description">
+      Ruby Optimized XML Parser
+    </div>
+
+    <div class="repository-website">
+      <p><a href="http://ohler55.github.com/ox/" rel="nofollow">http://ohler55.github.com/ox/</a></p>
+    </div>
+
+
+</div>
+
+<div class="overall-summary overall-summary-bottomless">
+
+  <div class="stats-switcher-viewport js-stats-switcher-viewport">
+    <div class="stats-switcher-wrapper">
+    <ul class="numbers-summary">
+      <li class="commits">
+        <a data-pjax="" href="https://github.com/ohler55/ox/commits/master">
+            <span class="octicon octicon-history"></span>
+            <span class="num text-emphasized">
+              420
+            </span>
+            commits
+        </a>
+      </li>
+      <li>
+        <a data-pjax="" href="https://github.com/ohler55/ox/branches">
+          <span class="octicon octicon-git-branch"></span>
+          <span class="num text-emphasized">
+            4
+          </span>
+          branches
+        </a>
+      </li>
+
+      <li>
+        <a data-pjax="" href="https://github.com/ohler55/ox/releases">
+          <span class="octicon octicon-tag"></span>
+          <span class="num text-emphasized">
+            47
+          </span>
+          releases
+        </a>
+      </li>
+
+      <li>
+        
+  <a href="https://github.com/ohler55/ox/graphs/contributors">
+    <span class="octicon octicon-organization"></span>
+    <span class="num text-emphasized">
+      15
+    </span>
+    contributors
+  </a>
+      </li>
+    </ul>
+
+      <div class="repository-lang-stats">
+        <ol class="repository-lang-stats-numbers">
+          <li>
+              <a href="https://github.com/ohler55/ox/search?l=c">
+                <span class="color-block language-color" style="background-color:#555;"></span>
+                <span class="lang">C</span>
+                <span class="percent">57.3%</span>
+              </a>
+          </li>
+          <li>
+              <a href="https://github.com/ohler55/ox/search?l=ruby">
+                <span class="color-block language-color" style="background-color:#701516;"></span>
+                <span class="lang">Ruby</span>
+                <span class="percent">41.8%</span>
+              </a>
+          </li>
+          <li>
+              <span class="other">
+                <span data-lang="Other" class="color-block language-color"></span>
+                <span class="lang">Other</span>
+                <span class="percent">0.9%</span>
+              </span>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <div class="tooltipped tooltipped-s" aria-label="Show language statistics">
+    <a href="https://github.com/ohler55/ox#" class="repository-lang-stats-graph js-toggle-lang-stats" style="background-color:#ccc">
+  <span class="language-color" style="width:57.3%; background-color:#555;" itemprop="keywords">C</span><span class="language-color" style="width:41.8%; background-color:#701516;" itemprop="keywords">Ruby</span><span class="language-color" style="width:0.9%; background-color:#ccc;" itemprop="keywords">Other</span>
+    </a>
+  </div>
+
+
+
+<div class="file-navigation in-mid-page">
+  <a href="https://github.com/ohler55/ox/find/master" class="js-show-file-finder minibutton empty-icon tooltipped tooltipped-s right" data-pjax="" data-hotkey="t" aria-label="Quickly jump between files">
+    <span class="octicon octicon-list-unordered"></span>
+  </a>
+    <a href="https://github.com/ohler55/ox/compare" aria-label="Compare, review, create a pull request" class="minibutton primary tooltipped tooltipped-s left compare-button" data-pjax="" data-ga-click="Repository, go to compare view, location:repo overview; icon:git-compare">
+      <span class="octicon octicon-git-compare"></span>
+    </a>
+
+  
+<div class="select-menu js-menu-container js-select-menu left">
+  <span class="minibutton select-menu-button js-menu-target css-truncate" data-hotkey="w" data-master-branch="master" data-ref="master" title="master" role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <span class="octicon octicon-git-branch"></span>
+    <i>branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax="" aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Switch branches/tags</span>
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="https://github.com/ohler55/ox#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="https://github.com/ohler55/ox#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/ohler55/ox/tree/gh-pages" data-name="gh-pages" data-skip-pjax="true" rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="gh-pages">
+                gh-pages
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected" href="https://github.com/ohler55/ox/tree/master" data-name="master" data-skip-pjax="true" rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="master">
+                master
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/ohler55/ox/tree/sax" data-name="sax" data-skip-pjax="true" rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="sax">
+                sax
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/ohler55/ox/tree/tolerant" data-name="tolerant" data-skip-pjax="true" rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="tolerant">
+                tolerant
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.1.8" data-name="v2.1.8" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.1.8">v2.1.8</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.1.7" data-name="v2.1.7" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.1.7">v2.1.7</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.1.6" data-name="v2.1.6" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.1.6">v2.1.6</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.1.5" data-name="v2.1.5" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.1.5">v2.1.5</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.1.4" data-name="v2.1.4" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.1.4">v2.1.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.1.3" data-name="v2.1.3" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.1.3">v2.1.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.1.2" data-name="v2.1.2" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.1.2">v2.1.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.1.1" data-name="v2.1.1" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.1.1">v2.1.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.1.0" data-name="v2.1.0" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.1.0">v2.1.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.0.12" data-name="v2.0.12" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.0.12">v2.0.12</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.0.11" data-name="v2.0.11" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.0.11">v2.0.11</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.0.10" data-name="v2.0.10" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.0.10">v2.0.10</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.0.9" data-name="v2.0.9" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.0.9">v2.0.9</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.0.8" data-name="v2.0.8" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.0.8">v2.0.8</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.0.7" data-name="v2.0.7" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.0.7">v2.0.7</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.0.6" data-name="v2.0.6" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.0.6">v2.0.6</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.0.5" data-name="v2.0.5" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.0.5">v2.0.5</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.0.4" data-name="v2.0.4" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.0.4">v2.0.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.0.3" data-name="v2.0.3" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.0.3">v2.0.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.0.2" data-name="v2.0.2" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.0.2">v2.0.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.0.1" data-name="v2.0.1" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.0.1">v2.0.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v2.0.0" data-name="v2.0.0" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v2.0.0">v2.0.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.9.4" data-name="v1.9.4" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.9.4">v1.9.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.9.3" data-name="v1.9.3" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.9.3">v1.9.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.9.2" data-name="v1.9.2" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.9.2">v1.9.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.9.1" data-name="v1.9.1" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.9.1">v1.9.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.9.0" data-name="v1.9.0" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.9.0">v1.9.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.8.9" data-name="v1.8.9" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.8.9">v1.8.9</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.8.8" data-name="v1.8.8" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.8.8">v1.8.8</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.8.7" data-name="v1.8.7" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.8.7">v1.8.7</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.8.6" data-name="v1.8.6" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.8.6">v1.8.6</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.8.5" data-name="v1.8.5" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.8.5">v1.8.5</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.8.4" data-name="v1.8.4" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.8.4">v1.8.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.8.3" data-name="v1.8.3" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.8.3">v1.8.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.8.2" data-name="v1.8.2" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.8.2">v1.8.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.8.1" data-name="v1.8.1" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.8.1">v1.8.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.8.0" data-name="v1.8.0" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.8.0">v1.8.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.7.1" data-name="v1.7.1" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.7.1">v1.7.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.7.0" data-name="v1.7.0" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.7.0">v1.7.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.6.9" data-name="v1.6.9" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.6.9">v1.6.9</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.6.8" data-name="v1.6.8" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.6.8">v1.6.8</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.6.7" data-name="v1.6.7" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.6.7">v1.6.7</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.6.5" data-name="v1.6.5" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.6.5">v1.6.5</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.6.4" data-name="v1.6.4" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.6.4">v1.6.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.6.3" data-name="v1.6.3" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.6.3">v1.6.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.6.2" data-name="v1.6.2" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.6.2">v1.6.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/ohler55/ox/tree/v1.6.1" data-name="v1.6.1" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v1.6.1">v1.6.1</a>
+            </div>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="breadcrumb"><span class="repo-root js-repo-root"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="./ox_files/ox.html" class="" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">ox</span></a></span></span><span class="separator">/</span><form action="https://github.com/ohler55/ox/new/master" aria-label="Fork this project and create a new file" class="js-new-blob-form tooltipped tooltipped-e inline-form new-file-form" method="post"><button class="web-edit-button" data-disable-with="working…" type="submit"><span aria-label="Fork this project and create a new file" class="js-new-blob-submit octicon octicon-plus" data-test-id="create-new-git-file"></span></button></form></div>
+</div>
+
+
+
+  
+  <div class="commit commit-tease js-details-container">
+    <p class="commit-title ">
+        <a href="https://github.com/ohler55/ox/commit/dfc4be5ee59170188730b0c92ea845da18f88c2a" class="message" data-pjax="true" title="fixed bug with IO.pipe use">fixed bug with IO.pipe use</a>
+        
+    </p>
+    <div class="commit-meta">
+      
+      <a href="https://github.com/ohler55/ox/commit/dfc4be5ee59170188730b0c92ea845da18f88c2a" class="sha-block" data-pjax="">latest commit <span class="sha">dfc4be5ee5</span></a>
+
+      <div class="authorship">
+        <img alt="Peter Ohler" class="avatar" data-user="118856" height="20" src="./ox_files/118856" width="20">
+        <span class="author-name"><a href="https://github.com/ohler55" rel="author">ohler55</a></span>
+        authored <time class="updated" datetime="2015-02-11T01:47:47Z" is="relative-time" title="Feb 10, 2015, 8:47 PM EST">29 days ago</time>
+
+      </div>
+    </div>
+  </div>
+
+  
+<div class="file-wrap">
+
+  <table class="files" data-pjax="">
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><span class="octicon octicon-alert"></span></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/ohler55/ox/tree/master/contrib" class="js-directory-link" id="1aca857b55ce1183cb964b343b4fdeb3-0bbe78495a35b53024f78c4211e337b1f1007b82" title="contrib">contrib</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="https://github.com/ohler55/ox/commit/9d92e345e4dc7ee6fa11c999b8175676b35b5364" class="message" data-pjax="true" title="Added benchmark using ported parser
+
+Great handler using a port of https://github.com/hakanensari/crack. All credit to https://github.com/hakanensari.">Added benchmark using ported parser</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2013-04-22T12:45:21Z" is="time-ago" title="Apr 22, 2013, 8:45 AM EDT">2 years ago</time></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/ohler55/ox/tree/master/ext/ox" class="js-directory-link" id="60d3fd126c244fd4ce452f73bb7aa5c6-18815b37adcd0cfcf7c7fc93fe79aa520b868b5b" title="This path skips through empty directories"><span class="simplified-path">ext/</span>ox</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="https://github.com/ohler55/ox/commit/dfc4be5ee59170188730b0c92ea845da18f88c2a" class="message" data-pjax="true" title="fixed bug with IO.pipe use">fixed bug with IO.pipe use</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-02-11T01:47:47Z" is="time-ago" title="Feb 10, 2015, 8:47 PM EST">29 days ago</time></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/ohler55/ox/tree/master/lib" class="js-directory-link" id="e8acc63b1e238f3255c900eed37254b8-996d2c9acbc24c1f850e015c822ede2d75ed095b" title="lib">lib</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="https://github.com/ohler55/ox/commit/dfc4be5ee59170188730b0c92ea845da18f88c2a" class="message" data-pjax="true" title="fixed bug with IO.pipe use">fixed bug with IO.pipe use</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-02-11T01:47:47Z" is="time-ago" title="Feb 10, 2015, 8:47 PM EST">29 days ago</time></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/ohler55/ox/tree/master/misc" class="js-directory-link" id="bc957e26ff41470c556ee5d09e96880b-7f3283c77441bd3e291f52e7f96b2690290ba130" title="misc">misc</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="https://github.com/ohler55/ox/commit/37116a7cb4c8a2d000ff787a3106c0a3838057ea" class="message" data-pjax="true" title="preparing dtd">preparing dtd</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2011-07-07T09:20:25Z" is="time-ago" title="Jul 7, 2011, 5:20 AM EDT">4 years ago</time></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/ohler55/ox/tree/master/test" class="js-directory-link" id="098f6bcd4621d373cade4e832627b4f6-f5e347bf244ffa5e8878094eca9de2144fe6bbe5" title="test">test</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="https://github.com/ohler55/ox/commit/dfc4be5ee59170188730b0c92ea845da18f88c2a" class="message" data-pjax="true" title="fixed bug with IO.pipe use">fixed bug with IO.pipe use</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-02-11T01:47:47Z" is="time-ago" title="Feb 10, 2015, 8:47 PM EST">29 days ago</time></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/ohler55/ox/tree/master/xml" class="js-directory-link" id="0f635d0e0f3874fff8b581c132e6c7a7-cbb2b7f7138660aa0858dc25e19a9123a77c384c" title="xml">xml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="https://github.com/ohler55/ox/commit/b1a7937fbf949bb56a4db7029b77ab5d86c42d3a" class="message" data-pjax="true" title="initial checkin">initial checkin</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2011-02-09T13:34:56Z" is="time-ago" title="Feb 9, 2011, 8:34 AM EST">4 years ago</time></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/ohler55/ox/blob/master/.gitignore" class="js-directory-link" id="a084b794bc0759e7a6b77810e01874f2-a79eed1644ea0e16b770bfb98defc743e82c0897" title=".gitignore">.gitignore</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="https://github.com/ohler55/ox/commit/d496d20155bb684d0a1f3de0144965e3fc3a7a4b" class="message" data-pjax="true" title="preapring for 1.8.2 release">preapring for 1.8.2 release</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2013-01-18T20:08:25Z" is="time-ago" title="Jan 18, 2013, 3:08 PM EST">2 years ago</time></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/ohler55/ox/blob/master/.travis.yml" class="js-directory-link" id="354f30a63fb0907d4ad57269548329e3-90929dc4f8dd347e91c2c1a0c531d7dd937b532a" title=".travis.yml">.travis.yml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="https://github.com/ohler55/ox/commit/280da2e178f06f5ee99b6c87df0d509aeaab123a" class="message" data-pjax="true" title="fixed stringio bug">fixed stringio bug</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2014-11-29T20:12:39Z" is="time-ago" title="Nov 29, 2014, 3:12 PM EST">3 months ago</time></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/ohler55/ox/blob/master/.yardopts" class="js-directory-link" id="5808b886486adcc2f1820a316cd5652d-f1a7f9a748a93c784b0a9f5784a304d6ca2b2df2" title=".yardopts">.yardopts</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="https://github.com/ohler55/ox/commit/7ed71d2e606cfb0c67ffb7fe2d1b380baca08130" class="message" data-pjax="true" title="release notes">release notes</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2014-02-02T22:36:49Z" is="time-ago" title="Feb 2, 2014, 5:36 PM EST">a year ago</time></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/ohler55/ox/blob/master/LICENSE" class="js-directory-link" id="9879d6db96fd29134fc802214163b95a-a8961f2ffb6611e7873a472c1e5d662e85e026a1" title="LICENSE">LICENSE</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="https://github.com/ohler55/ox/commit/aa93b2a59977b7944c0593f9b8fbdafa052b34e0" class="message" data-pjax="true" title="added back update license">added back update license</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2014-12-31T21:25:02Z" is="time-ago" title="Dec 31, 2014, 4:25 PM EST">2 months ago</time></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/ohler55/ox/blob/master/README.md" class="js-directory-link" id="04c6e90faac2675aa89e2176d2eec7d8-b40a564ad06e0192367e8afe20a741daed1b944a" title="README.md">README.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="https://github.com/ohler55/ox/commit/dfc4be5ee59170188730b0c92ea845da18f88c2a" class="message" data-pjax="true" title="fixed bug with IO.pipe use">fixed bug with IO.pipe use</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-02-11T01:47:47Z" is="time-ago" title="Feb 10, 2015, 8:47 PM EST">29 days ago</time></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/ohler55/ox/blob/master/build_test.sh" class="js-directory-link" id="994c58c917b8f986eb9f60c19a9d20fd-31c97eb609af030103cfae3e66ff062f55d3f7bd" title="build_test.sh">build_test.sh</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="https://github.com/ohler55/ox/commit/8a59e04a79d27ce2f4d41bf1562c8a1e18ec6d0c" class="message" data-pjax="true" title="fixed bug with symbols not being pinned">fixed bug with symbols not being pinned</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2014-12-30T04:34:51Z" is="time-ago" title="Dec 29, 2014, 11:34 PM EST">2 months ago</time></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/ohler55/ox/blob/master/notes" class="js-directory-link" id="4358b5009c67d0e31d7fbf1663fcd3bf-8391cfe4e070a534b450c2036083a8244bfaf886" title="notes">notes</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="https://github.com/ohler55/ox/commit/602497dbe399f9cfbb42dceb0e3e536bfebf985d" class="message" data-pjax="true" title="checking release 2.1.7">checking release 2.1.7</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-01-31T20:23:09Z" is="time-ago" title="Jan 31, 2015, 3:23 PM EST">a month ago</time></span>
+          </td>
+        </tr>
+        <tr>
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="./ox_files/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/ohler55/ox/blob/master/ox.gemspec" class="js-directory-link" id="7800aa3e3191fc6f7368e102f538df28-8d15c721fa49b7b7f1565a86d4ad55d796b07d72" title="ox.gemspec">ox.gemspec</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+              <a href="https://github.com/ohler55/ox/commit/aa93b2a59977b7944c0593f9b8fbdafa052b34e0" class="message" data-pjax="true" title="added back update license">added back update license</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2014-12-31T21:25:02Z" is="time-ago" title="Dec 31, 2014, 4:25 PM EST">2 months ago</time></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+  <div id="readme" class="boxed-group flush clearfix announce instapaper_body md">
+    <h3>
+      <span class="octicon octicon-book"></span>
+      README.md
+    </h3>
+
+    <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1>
+<a id="user-content-ox-gem" class="anchor" href="https://github.com/ohler55/ox#ox-gem" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ox gem</h1>
+
+<p>A fast XML parser and Object marshaller as a Ruby gem.</p>
+
+<h2>
+<a id="user-content-installation" class="anchor" href="https://github.com/ohler55/ox#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<pre><code>gem install ox
+</code></pre>
+
+<h2>
+<a id="user-content-documentation" class="anchor" href="https://github.com/ohler55/ox#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation</h2>
+
+<p><em>Documentation</em>: <a href="http://www.ohler.com/ox">http://www.ohler.com/ox</a></p>
+
+<h2>
+<a id="user-content-source" class="anchor" href="https://github.com/ohler55/ox#source" aria-hidden="true"><span class="octicon octicon-link"></span></a>Source</h2>
+
+<p><em>GitHub</em> <em>repo</em>: <a href="./ox_files/ox.html">https://github.com/ohler55/ox</a></p>
+
+<p><em>RubyGems</em> <em>repo</em>: <a href="https://rubygems.org/gems/ox">https://rubygems.org/gems/ox</a></p>
+
+<h2>
+<a id="user-content-follow-oxgem-on-twitter" class="anchor" href="https://github.com/ohler55/ox#follow-oxgem-on-twitter" aria-hidden="true"><span class="octicon octicon-link"></span></a>Follow @oxgem on Twitter</h2>
+
+<p><a href="http://twitter.com/#!/peterohler">Follow @peterohler on Twitter</a> for announcements and news about the Ox gem.</p>
+
+<h2>
+<a id="user-content-build-status" class="anchor" href="https://github.com/ohler55/ox#build-status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Build Status</h2>
+
+<p><a href="http://travis-ci.org/ohler55/ox"><img src="./ox_files/68747470733a2f2f7365637572652e7472617669732d63692e6f72672f6f686c657235352f6f782e706e673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://secure.travis-ci.org/ohler55/ox.png?branch=master" style="max-width:100%;"></a></p>
+
+<h2>
+<a id="user-content-links-of-interest" class="anchor" href="https://github.com/ohler55/ox#links-of-interest" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links of Interest</h2>
+
+<p><a href="http://www.ohler.com/dev/xml_with_ruby/xml_with_ruby.html">Ruby XML Gem Comparison</a> for a performance comparison between Ox, Nokogiri, and LibXML.</p>
+
+<p><a href="http://www.ohler.com/dev/ruby_object_xml_serialization/ruby_object_xml_serialization.html">Fast Ruby XML Serialization</a> to see how Ox can be used as a faster replacement for Marshal.</p>
+
+<p><em>Fast JSON parser and marshaller on RubyGems</em>: <a href="https://rubygems.org/gems/oj">https://rubygems.org/gems/oj</a></p>
+
+<p><em>Fast JSON parser and marshaller on GitHub</em>: <a href="https://rubygems.org/gems/oj">https://rubygems.org/gems/oj</a></p>
+
+<h2>
+<a id="user-content-release-notes" class="anchor" href="https://github.com/ohler55/ox#release-notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release Notes</h2>
+
+<h3>
+<a id="user-content-current-release-218" class="anchor" href="https://github.com/ohler55/ox#current-release-218" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current Release 2.1.8</h3>
+
+<ul class="task-list">
+<li>Fixed a bug that caused all input to be read before parsing with the sax
+parser and an IO.pipe.</li>
+</ul>
+
+<h3>
+<a id="user-content-release-217" class="anchor" href="https://github.com/ohler55/ox#release-217" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release 2.1.7</h3>
+
+<ul class="task-list">
+<li><p>Empty elements such as  are now called back with empty text.</p></li>
+<li><p>Fixed GC problem that occurs with the new GC in Ruby 2.2 that garbage
+collects Symbols.</p></li>
+</ul>
+
+<h2>
+<a id="user-content-description" class="anchor" href="https://github.com/ohler55/ox#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h2>
+
+<p>Optimized XML (Ox), as the name implies was written to provide speed optimized
+XML and now HTML handling. It was designed to be an alternative to Nokogiri and other Ruby
+XML parsers in generic XML parsing and as an alternative to Marshal for Object
+serialization.</p>
+
+<p>Unlike some other Ruby XML parsers, Ox is self contained. Ox uses nothing
+other than standard C libraries so version issues with libXml are not an
+issue.</p>
+
+<p>Marshal uses a binary format for serializing Objects. That binary format
+changes with releases making Marshal dumped Object incompatible between some
+versions. The use of a binary format make debugging message streams or file
+contents next to impossible unless the same version of Ruby and only Ruby is
+used for inspecting the serialize Object. Ox on the other hand uses human
+readable XML. Ox also includes options that allow strict, tolerant, or a mode
+that automatically defines missing classes.</p>
+
+<p>It is possible to write an XML serialization gem with Nokogiri or other XML
+parsers but writing such a package in Ruby results in a module significantly
+slower than Marshal. This is what triggered the start of Ox development.</p>
+
+<p>Ox handles XML documents in three ways. It is a generic XML parser and writer,
+a fast Object / XML marshaller, and a stream SAX parser. Ox was written for
+speed as a replacement for Nokogiri, Ruby LibXML, and for Marshal.</p>
+
+<p>As an XML parser it is 2 or more times faster than Nokogiri and as a generic
+XML writer it is as much as 20 times faster than Nokogiri. Of course different
+files may result in slightly different times.</p>
+
+<p>As an Object serializer Ox is up to 6 times faster than the standard Ruby
+Marshal.dump() and up to 3 times faster than Marshal.load().</p>
+
+<p>The SAX like stream parser is 40 times faster than Nokogiri and more than 13
+times faster than LibXML when validating a file with minimal Ruby
+callbacks. Unlike Nokogiri and LibXML, Ox can be tuned to use only the SAX
+callbacks that are of interest to the caller. (See the perf_sax.rb file for an
+example.)</p>
+
+<p>Ox is compatible with Ruby 1.8.7, 1.9.3, 2.1.2, 2.2.0 and RBX.</p>
+
+<h3>
+<a id="user-content-object-dump-sample" class="anchor" href="https://github.com/ohler55/ox#object-dump-sample" aria-hidden="true"><span class="octicon octicon-link"></span></a>Object Dump Sample:</h3>
+
+<div class="highlight highlight-ruby"><pre><span class="pl-k">require</span> <span class="pl-s1"><span class="pl-pds">'</span>ox<span class="pl-pds">'</span></span>
+
+<span class="pl-k">class</span> <span class="pl-en">Sample</span>
+  <span class="pl-k">attr_accessor</span> <span class="pl-c1">:a</span>, <span class="pl-c1">:b</span>, <span class="pl-c1">:c</span>
+
+  <span class="pl-k">def</span> <span class="pl-en">initialize</span>(<span class="pl-vpf">a</span>, <span class="pl-vpf">b</span>, <span class="pl-vpf">c</span>)
+    <span class="pl-vo">@a</span> <span class="pl-k">=</span> a
+    <span class="pl-vo">@b</span> <span class="pl-k">=</span> b
+    <span class="pl-vo">@c</span> <span class="pl-k">=</span> c
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span>
+
+<span class="pl-c"># Create Object</span>
+obj <span class="pl-k">=</span> <span class="pl-s3">Sample</span>.<span class="pl-k">new</span>(<span class="pl-c1">1</span>, <span class="pl-s1"><span class="pl-pds">"</span>bee<span class="pl-pds">"</span></span>, [<span class="pl-s1"><span class="pl-pds">'</span>x<span class="pl-pds">'</span></span>, <span class="pl-c1">:y</span>, <span class="pl-c1">7.0</span>])
+<span class="pl-c"># Now dump the Object to an XML String.</span>
+xml <span class="pl-k">=</span> <span class="pl-s3">Ox</span>.dump(obj)
+<span class="pl-c"># Convert the object back into a Sample Object.</span>
+obj2 <span class="pl-k">=</span> <span class="pl-s3">Ox</span>.parse_obj(xml)</pre></div>
+
+<h3>
+<a id="user-content-generic-xml-writing-and-parsing" class="anchor" href="https://github.com/ohler55/ox#generic-xml-writing-and-parsing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Generic XML Writing and Parsing:</h3>
+
+<div class="highlight highlight-ruby"><pre><span class="pl-k">require</span> <span class="pl-s1"><span class="pl-pds">'</span>ox<span class="pl-pds">'</span></span>
+
+doc <span class="pl-k">=</span> <span class="pl-s3">Ox</span>::<span class="pl-s3">Document</span>.<span class="pl-k">new</span>(<span class="pl-c1">:version</span> =&gt; <span class="pl-s1"><span class="pl-pds">'</span>1.0<span class="pl-pds">'</span></span>)
+
+top <span class="pl-k">=</span> <span class="pl-s3">Ox</span>::<span class="pl-s3">Element</span>.<span class="pl-k">new</span>(<span class="pl-s1"><span class="pl-pds">'</span>top<span class="pl-pds">'</span></span>)
+top[<span class="pl-c1">:name</span>] <span class="pl-k">=</span> <span class="pl-s1"><span class="pl-pds">'</span>sample<span class="pl-pds">'</span></span>
+doc <span class="pl-k">&lt;&lt;</span> top
+
+mid <span class="pl-k">=</span> <span class="pl-s3">Ox</span>::<span class="pl-s3">Element</span>.<span class="pl-k">new</span>(<span class="pl-s1"><span class="pl-pds">'</span>middle<span class="pl-pds">'</span></span>)
+mid[<span class="pl-c1">:name</span>] <span class="pl-k">=</span> <span class="pl-s1"><span class="pl-pds">'</span>second<span class="pl-pds">'</span></span>
+top <span class="pl-k">&lt;&lt;</span> mid
+
+bot <span class="pl-k">=</span> <span class="pl-s3">Ox</span>::<span class="pl-s3">Element</span>.<span class="pl-k">new</span>(<span class="pl-s1"><span class="pl-pds">'</span>bottom<span class="pl-pds">'</span></span>)
+bot[<span class="pl-c1">:name</span>] <span class="pl-k">=</span> <span class="pl-s1"><span class="pl-pds">'</span>third<span class="pl-pds">'</span></span>
+mid <span class="pl-k">&lt;&lt;</span> bot
+
+xml <span class="pl-k">=</span> <span class="pl-s3">Ox</span>.dump(doc)
+
+<span class="pl-c"># xml =</span>
+<span class="pl-c"># &lt;top name="sample"&gt;</span>
+<span class="pl-c">#   &lt;middle name="second"&gt;</span>
+<span class="pl-c">#     &lt;bottom name="third"/&gt;</span>
+<span class="pl-c">#   &lt;/middle&gt;</span>
+<span class="pl-c"># &lt;/top&gt;</span>
+
+doc2 <span class="pl-k">=</span> <span class="pl-s3">Ox</span>.parse(xml)
+puts <span class="pl-s1"><span class="pl-pds">"</span>Same? <span class="pl-pse">#{</span><span class="pl-s2">doc <span class="pl-k">==</span> doc2</span><span class="pl-pse"><span class="pl-s2">}</span></span><span class="pl-pds">"</span></span>
+<span class="pl-c"># true</span></pre></div>
+
+<h3>
+<a id="user-content-sax-xml-parsing" class="anchor" href="https://github.com/ohler55/ox#sax-xml-parsing" aria-hidden="true"><span class="octicon octicon-link"></span></a>SAX XML Parsing:</h3>
+
+<div class="highlight highlight-ruby"><pre><span class="pl-k">require</span> <span class="pl-s1"><span class="pl-pds">'</span>stringio<span class="pl-pds">'</span></span>
+<span class="pl-k">require</span> <span class="pl-s1"><span class="pl-pds">'</span>ox<span class="pl-pds">'</span></span>
+
+<span class="pl-k">class</span> <span class="pl-en">Sample<span class="pl-e"> &lt; ::Ox::Sax</span></span>
+  <span class="pl-k">def</span> <span class="pl-en">start_element</span>(<span class="pl-vpf">name</span>); puts <span class="pl-s1"><span class="pl-pds">"</span>start: <span class="pl-pse">#{</span><span class="pl-s2">name</span><span class="pl-pse"><span class="pl-s2">}</span></span><span class="pl-pds">"</span></span>;        <span class="pl-k">end</span>
+  <span class="pl-k">def</span> <span class="pl-en">end_element</span>(<span class="pl-vpf">name</span>);   puts <span class="pl-s1"><span class="pl-pds">"</span>end: <span class="pl-pse">#{</span><span class="pl-s2">name</span><span class="pl-pse"><span class="pl-s2">}</span></span><span class="pl-pds">"</span></span>;          <span class="pl-k">end</span>
+  <span class="pl-k">def</span> <span class="pl-en">attr</span>(<span class="pl-vpf">name</span>, <span class="pl-vpf">value</span>);   puts <span class="pl-s1"><span class="pl-pds">"</span>  <span class="pl-pse">#{</span><span class="pl-s2">name</span><span class="pl-pse"><span class="pl-s2">}</span></span> =&gt; <span class="pl-pse">#{</span><span class="pl-s2">value</span><span class="pl-pse"><span class="pl-s2">}</span></span><span class="pl-pds">"</span></span>; <span class="pl-k">end</span>
+  <span class="pl-k">def</span> <span class="pl-en">text</span>(<span class="pl-vpf">value</span>);         puts <span class="pl-s1"><span class="pl-pds">"</span>text <span class="pl-pse">#{</span><span class="pl-s2">value</span><span class="pl-pse"><span class="pl-s2">}</span></span><span class="pl-pds">"</span></span>;         <span class="pl-k">end</span>
+<span class="pl-k">end</span>
+
+io <span class="pl-k">=</span> <span class="pl-s3">StringIO</span>.<span class="pl-k">new</span>(<span class="pl-s1"><span class="pl-pds">%{</span></span>
+<span class="pl-s1">&lt;top name="sample"&gt;</span>
+<span class="pl-s1">  &lt;middle name="second"&gt;</span>
+<span class="pl-s1">    &lt;bottom name="third"/&gt;</span>
+<span class="pl-s1">  &lt;/middle&gt;</span>
+<span class="pl-s1">&lt;/top&gt;</span>
+<span class="pl-s1"><span class="pl-pds">}</span></span>)
+
+handler <span class="pl-k">=</span> <span class="pl-s3">Sample</span>.<span class="pl-k">new</span>()
+<span class="pl-s3">Ox</span>.sax_parse(handler, io)
+<span class="pl-c"># outputs</span>
+<span class="pl-c"># start: top</span>
+<span class="pl-c">#   name =&gt; sample</span>
+<span class="pl-c"># start: middle</span>
+<span class="pl-c">#   name =&gt; second</span>
+<span class="pl-c"># start: bottom</span>
+<span class="pl-c">#   name =&gt; third</span>
+<span class="pl-c"># end: bottom</span>
+<span class="pl-c"># end: middle</span>
+<span class="pl-c"># end: top</span></pre></div>
+
+<h3>
+<a id="user-content-yielding-results-immediately-while-sax-xml-parsing" class="anchor" href="https://github.com/ohler55/ox#yielding-results-immediately-while-sax-xml-parsing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Yielding results immediately while SAX XML Parsing:</h3>
+
+<div class="highlight highlight-ruby"><pre><span class="pl-k">require</span> <span class="pl-s1"><span class="pl-pds">'</span>stringio<span class="pl-pds">'</span></span>
+<span class="pl-k">require</span> <span class="pl-s1"><span class="pl-pds">'</span>ox<span class="pl-pds">'</span></span>
+
+<span class="pl-k">class</span> <span class="pl-en">Yielder<span class="pl-e"> &lt; ::Ox::Sax</span></span>
+  <span class="pl-k">def</span> <span class="pl-en">initialize</span>(<span class="pl-vpf">block</span>); <span class="pl-vo">@yield_to</span> <span class="pl-k">=</span> block; <span class="pl-k">end</span>
+  <span class="pl-k">def</span> <span class="pl-en">start_element</span>(<span class="pl-vpf">name</span>); <span class="pl-vo">@yield_to</span>.call(name); <span class="pl-k">end</span>
+<span class="pl-k">end</span>
+
+io <span class="pl-k">=</span> <span class="pl-s3">StringIO</span>.<span class="pl-k">new</span>(<span class="pl-s1"><span class="pl-pds">%{</span></span>
+<span class="pl-s1">&lt;top name="sample"&gt;</span>
+<span class="pl-s1">  &lt;middle name="second"&gt;</span>
+<span class="pl-s1">    &lt;bottom name="third"/&gt;</span>
+<span class="pl-s1">  &lt;/middle&gt;</span>
+<span class="pl-s1">&lt;/top&gt;</span>
+<span class="pl-s1"><span class="pl-pds">}</span></span>)
+
+proc <span class="pl-k">=</span> <span class="pl-s3">Proc</span>.<span class="pl-k">new</span> { |<span class="pl-vo">name</span>| puts name }
+handler <span class="pl-k">=</span> <span class="pl-s3">Yielder</span>.<span class="pl-k">new</span>(proc)
+puts <span class="pl-s1"><span class="pl-pds">"</span>before parse<span class="pl-pds">"</span></span>
+<span class="pl-s3">Ox</span>.sax_parse(handler, io)
+puts <span class="pl-s1"><span class="pl-pds">"</span>after parse<span class="pl-pds">"</span></span>
+<span class="pl-c"># outputs</span>
+<span class="pl-c"># before parse</span>
+<span class="pl-c"># top</span>
+<span class="pl-c"># middle</span>
+<span class="pl-c"># bottom</span>
+<span class="pl-c"># after parse</span></pre></div>
+
+<h3>
+<a id="user-content-object-xml-format" class="anchor" href="https://github.com/ohler55/ox#object-xml-format" aria-hidden="true"><span class="octicon octicon-link"></span></a>Object XML format</h3>
+
+<p>The XML format used for Object encoding follows the structure of the
+Object. Each XML element is encoded so that the XML element name is a type
+indicator. Attributes of the element provide additional information such as
+the Class if relevant, the Object attribute name, and Object ID if
+necessary.</p>
+
+<p>The type indicator map is:</p>
+
+<ul class="task-list">
+<li>
+<strong>a</strong> =&gt; <code>Array</code>
+</li>
+<li>
+<strong>b</strong> =&gt; <code>Base64</code>
+</li>
+<li>
+<strong>c</strong> =&gt; <code>Class</code>
+</li>
+<li>
+<strong>f</strong> =&gt; <code>Float</code>
+</li>
+<li>
+<strong>g</strong> =&gt; <code>Regexp</code>
+</li>
+<li>
+<strong>h</strong> =&gt; <code>Hash</code>
+</li>
+<li>
+<strong>i</strong> =&gt; <code>Fixnum</code>
+</li>
+<li>
+<strong>j</strong> =&gt; <code>Bignum</code>
+</li>
+<li>
+<strong>l</strong> =&gt; <code>Rational</code>
+</li>
+<li>
+<strong>m</strong> =&gt; <code>Symbol</code>
+</li>
+<li>
+<strong>n</strong> =&gt; <code>FalseClass</code>
+</li>
+<li>
+<strong>o</strong> =&gt; <code>Object</code>
+</li>
+<li>
+<strong>p</strong> =&gt; <code>Ref</code>
+</li>
+<li>
+<strong>r</strong> =&gt; <code>Range</code>
+</li>
+<li>
+<strong>s</strong> =&gt; <code>String</code>
+</li>
+<li>
+<strong>t</strong> =&gt; <code>Time</code>
+</li>
+<li>
+<strong>u</strong> =&gt; <code>Struct</code>
+</li>
+<li>
+<strong>v</strong> =&gt; <code>Complex</code>
+</li>
+<li>
+<strong>x</strong> =&gt; <code>Raw</code>
+</li>
+<li>
+<strong>y</strong> =&gt; <code>TrueClass</code>
+</li>
+<li>
+<strong>z</strong> =&gt; <code>NilClass</code>
+</li>
+</ul>
+
+<p>If the type is an Object, type 'o' then an attribute named 'c' should be set
+with the full Class name including the Module names. If the XML element
+represents an Object then a sub-elements is included for each attribute of
+the Object. An XML element attribute 'a' is set with a value that is the
+name of the Ruby Object attribute. In all cases, except for the Exception
+attribute hack the attribute names begin with an @ character. (Exception are
+strange in that the attributes of the Exception Class are not named with a @
+suffix. A hack since it has to be done in C and can not be done through the
+interpreter.)</p>
+
+<p>Values are encoded as the text portion of an element or in the sub-elements
+of the principle. For example, a Fixnum is encoded as:</p>
+
+<div class="highlight highlight-xml"><pre>&lt;<span class="pl-ent">i</span>&gt;123&lt;/<span class="pl-ent">i</span>&gt;</pre></div>
+
+<p>An Array has sub-elements and is encoded similar to this example.</p>
+
+<div class="highlight highlight-xml"><pre>&lt;<span class="pl-ent">a</span>&gt;
+  &lt;<span class="pl-ent">i</span>&gt;1&lt;/<span class="pl-ent">i</span>&gt;
+  &lt;<span class="pl-ent">s</span>&gt;abc&lt;/<span class="pl-ent">s</span>&gt;
+&lt;/<span class="pl-ent">a</span>&gt;</pre></div>
+
+<p>A Hash is encoded with an even number of elements where the first element is
+the key and the second is the value. This is repeated for each entry in the
+Hash. An example is of { 1 =&gt; 'one', 2 =&gt; 'two' } encoding is:</p>
+
+<div class="highlight highlight-xml"><pre>&lt;<span class="pl-ent">h</span>&gt;
+  &lt;<span class="pl-ent">i</span>&gt;1&lt;/<span class="pl-ent">i</span>&gt;
+  &lt;<span class="pl-ent">s</span>&gt;one&lt;/<span class="pl-ent">s</span>&gt;
+  &lt;<span class="pl-ent">i</span>&gt;2&lt;/<span class="pl-ent">i</span>&gt;
+  &lt;<span class="pl-ent">s</span>&gt;two&lt;/<span class="pl-ent">s</span>&gt;
+&lt;/<span class="pl-ent">h</span>&gt;</pre></div>
+
+<p>Strings with characters not allowed in XML are base64 encoded amd will be
+converted back into a String when loaded.</p>
+
+<p>Ox supports circular references where attributes of one Object can refer to
+an Object that refers back to the first Object. When this option is used an
+Object ID is added to each XML Object element as the value of the 'a'
+attribute.</p>
+</article>
+  </div>
+
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com/" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="http://training.github.com/" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="http://shop.github.com/" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com/" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>© 2015 <span title="0.07375s from github-fe143-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="https://github.com/ohler55/ox#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="https://github.com/ohler55/ox#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w" aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="https://github.com/ohler55/ox#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="./ox_files/frameworks-ae2cfa52038a89e53f630873f978d91708f4387e3d9be2f39e4513f6a3461b44.js"></script>
+      <script async="async" crossorigin="anonymous" src="./ox_files/github-5b37d01af290efac128f77035dbf0745b2dc7790fa4b7e39843b623e187c47d9.js"></script>
+      
+      
+
+  
+
+
+<style>[href^="https://twitter.com/share?"],[href^="https://twitter.com/intent/tweet?"],[href^="https://twitter.com/intent/retweet?tweet_id"],[href^="https://twitter.com/intent/follow?"],[href^="http://twitter.com/share?"],[href^="http://twitter.com/intent/tweet?"],[href^="http://twitter.com/intent/tweet/?url="],[href^="http://twitter.com/home?"],[href^="http://twitter.com/home/?"],[href^="http://twitter.com/?status="]
+{display:none !important;}</style>    <div class="facebox" id="facebox" style="display:none;">       <div class="facebox-popup">         <div class="facebox-content">         </div>         <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">           <span class="octicon octicon-remove-close"></span>         </button>       </div>     </div></body><style type="text/css">embed[type*="application/x-shockwave-flash"],embed[src*=".swf"],object[type*="application/x-shockwave-flash"],object[codetype*="application/x-shockwave-flash"],object[src*=".swf"],object[codebase*="swflash.cab"],object[classid*="D27CDB6E-AE6D-11cf-96B8-444553540000"],object[classid*="d27cdb6e-ae6d-11cf-96b8-444553540000"],object[classid*="D27CDB6E-AE6D-11cf-96B8-444553540000"]{	display: none !important;}</style></html>
