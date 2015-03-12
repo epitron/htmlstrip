@@ -1,7 +1,6 @@
 require 'epitools'
 require 'ox'
 
-
 if $DEBUG
   def debug(msg)
     puts msg 
@@ -40,13 +39,9 @@ class Ox::Element
 end
 
 
-
 class Ox::Document
-
   def good?; true; end
-
   def empty?; false; end
-
 end
 
 #################################################################################
@@ -110,24 +105,32 @@ class Parser < Ox::Sax
     "  " * (stack.size-1)
   end
 
-  def print(node=nil, depth=0)
+  def print(node=nil, depth=0, out=$stdout)
     if node
       dent = "  "*depth
 
       case node
       when String
-        puts "#{dent}#{node}" unless node.empty?
+        out.puts "#{dent}#{node}" unless node.empty?
       when Ox::Element
         tag = [node.name, *node.attributes.map{|k,v| "#{k}=#{v.inspect}"}].join(" ")
-        puts "#{dent}<#{tag}>"
-        node.nodes.each { |n| print(n, depth+1) }
-        puts "#{dent}</#{node.name}>"
+        out.puts "#{dent}<#{tag}>"
+        node.nodes.each { |n| print(n, depth+1, out) }
+        out.puts "#{dent}</#{node.name}>"
       else
         raise "WTF"
       end
     else
-      root.nodes.each { |n| print(n) }
+      root.nodes.each { |n| print(n, depth, out) }
     end
+  end
+
+  def to_s
+    require 'stringio'
+    out = StringIO.new
+    print(@root, 0, out)
+    out.seek(0)
+    out.read
   end
 
 end
@@ -211,5 +214,6 @@ if $0 == __FILE__
     parser = parser_class.new
     time { parser.parse!(arg) }
     parser.print if opts.delete("-p")
+    p parser.to_s if opts.delete("-to_s")
   end
 end
