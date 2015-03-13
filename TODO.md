@@ -1,5 +1,6 @@
 # TODOs
 
+ * Gemify!
  * Fix goog.html problem
 
 # Done TODOs
