@@ -21,7 +21,14 @@ class Ox::Element
   #
   # Tags to keep...
   #
-  GOOD_TAGS = Set.new %w[title div span img a b i p em strong]
+  GOOD_TAGS = Set.new %w[
+    a img
+    div span p
+    b i em strong
+    h1 h2 h3 h4 h5 h6 h7 h8 title
+    ul li ol dl dd dt
+    audio video source
+  ]
   def good?
     GOOD_TAGS.include? name.downcase
   end
@@ -204,9 +211,26 @@ class Stripper < Parser
     @good = last_good
   end
 
+  #
+  # Attributes to keep...
+  #
+  GOOD_ATTRS = {
+    "img"    => Set.new(%i[src alt width height]),
+    "a"      => Set.new(%i[href title]),
+    "source" => Set.new(%i[src]),
+    "video"  => Set.new(%i[src width height]),
+    "audio"  => Set.new(%i[src]),
+  }
   def attr(name, value)
     debug "#{indent}  #{name} => #{value.inspect}"
-    stack.last[name] = value
+
+    tag = stack.last
+
+    if attrs = GOOD_ATTRS[tag.name.downcase]
+      if attrs.include? name.downcase
+        tag[name] = value
+      end
+    end
   end
 
   def text(value)
